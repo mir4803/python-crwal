@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crawl Result</title>
+</head>
+<body>
+    <h1>Crawl Result</h1>
+    <ul>
+        {% for article in articles %}
+        <li>
+            <a href="{{ article.link }}">{{ article.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+</html>
